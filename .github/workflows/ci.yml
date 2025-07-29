@@ -114,7 +114,7 @@ jobs:
     if: contains(github.ref, 'refs/heads/main')
     environment:
       name: staging
-      url: https://staging--hq-marvel.netlify-app
+      url: https://staging--hq-marvel.netlify.app/
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -152,6 +152,7 @@ jobs:
       name: production
       url: https://hq-marvel.netlify.app
     needs: [deploy-staging]
+    permissions: write-all
     if: contains(github.ref, 'refs/heads/main')
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
