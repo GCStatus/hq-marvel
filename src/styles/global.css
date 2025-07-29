@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: 'Bangers', cursive;
+}
+
+#nprogress .bar {
+  background: #ffffff !important;
+  height: 2px !important;
+  box-shadow:
+    0 0 10px #ffffff,
+    0 0 5px #ffffff;
+}
+
+#nprogress .peg {
+  display: none !important;
+}

@@ -1,0 +1,1 @@
+- [ ] Criar skeletons para os componentes ao invés de um Loader.
