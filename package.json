@@ -127,5 +127,8 @@
       "@semantic-release/release-notes-generator",
       "@semantic-release/github"
     ]
+  },
+  "overrides": {
+    "@rollup/rollup-android-arm-eabi": "0.0.0"
   }
 }
