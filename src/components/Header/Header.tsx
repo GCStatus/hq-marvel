@@ -137,12 +137,14 @@ function Header() {
         })}
       </NavContainer>
 
-      <Hamburger
-        toggled={isMobileMenuOpen}
-        toggle={setMobileMenuOpen}
-        color="#FFFFFF"
-        size={24}
-      />
+      <div className="hamburger-wrapper">
+        <Hamburger
+          toggled={isMobileMenuOpen}
+          toggle={setMobileMenuOpen}
+          color="#FFFFFF"
+          size={24}
+        />
+      </div>
 
       <AnimatePresence>
         {isMobileMenuOpen && (

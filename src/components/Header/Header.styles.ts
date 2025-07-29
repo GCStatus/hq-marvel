@@ -26,11 +26,9 @@ export const HeaderWrapper = styled(motion.header)<{
     border-bottom-color 0.4s ease-in-out;
   background: rgb(18, 18, 18, 0.97);
   border-bottom: 1px solid transparent;
-  flex-direction: row;
 
-  @media (max-width: 420px) {
-    flex-direction: column;
-    height: 120px;
+  @media (max-width: 768px) {
+    padding: 0 20px;
   }
 
   ${({ isScrolled }) =>
@@ -41,7 +39,7 @@ export const HeaderWrapper = styled(motion.header)<{
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     `}
 
-  .hamburger-react {
+  .hamburger-wrapper {
     display: none;
     z-index: 1001;
 
@@ -52,11 +50,7 @@ export const HeaderWrapper = styled(motion.header)<{
 `
 
 export const LogoContainer = styled(motion.div)`
-  margin-top: 0;
-
-  @media (max-width: 420px) {
-    margin-top: 0.7rem;
-  }
+  flex-shrink: 0;
 `
 
 export const Logo = styled.div`
@@ -193,10 +187,11 @@ export const MobileNav = styled(motion.div)`
   width: min(90vw, 350px);
   background-color: #151515;
   z-index: 1000;
-  padding: 120px 25px;
+  padding: 120px 25px 40px;
   display: flex;
   flex-direction: column;
   box-shadow: -10px 0 50px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
 `
 
 export const MobileNavLinks = styled(motion.div)`
