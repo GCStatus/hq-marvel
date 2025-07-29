@@ -1,6 +1,5 @@
 import 'nprogress/nprogress.css'
 import './styles/global.css'
-import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import { useEffect } from 'react'
 
