@@ -9,7 +9,7 @@ interface VirtualizedGridProps<T> {
 }
 
 const COLUMN_GUTTER = 40
-const ROW_GUTTER = 60
+const ROW_GUTTER = 80
 
 const getColumnCount = (width: number) => {
   if (width >= 1280) return 4

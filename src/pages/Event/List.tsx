@@ -39,7 +39,7 @@ function List() {
 
         {combinedResults.length > 0 && (
           <VirtualizedGrid
-            aspectRatio={5 / 4}
+            aspectRatio={8 / 5.6}
             items={combinedResults}
             renderItem={(event) => <EventCard event={event} />}
           />
